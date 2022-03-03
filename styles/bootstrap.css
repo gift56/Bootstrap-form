@@ -5,4 +5,35 @@
 .align {
   text-align: end;
 }
+
+body {
+  background-image: url(/styles/img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .container {
+  background-color: white;
+  padding: 2em;
+  margin: 5vh auto;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 900px) {
+  body .container {
+    width: 100% !important;
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+body .container .form-label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+body .container .form-check-label {
+  font-size: 18px;
+  font-weight: 600;
+}
 /*# sourceMappingURL=bootstrap.css.map */
