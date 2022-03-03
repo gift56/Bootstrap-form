@@ -1,1 +1,8 @@
-/* No CSS *//*# sourceMappingURL=bootstrap.css.map */
+.invisible {
+  visibility: hidden;
+}
+
+.align {
+  text-align: end;
+}
+/*# sourceMappingURL=bootstrap.css.map */

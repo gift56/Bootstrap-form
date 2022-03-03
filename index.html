@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,141 @@
     <link rel="stylesheet" href="/styles/css/bootstrap.min.css">
     <link rel="stylesheet" href="/styles/bootstrap.css">
 </head>
+
 <body>
     <div class="container">
         <h1 class="text-center mt-3">My First Bootstrap Form Design</h1>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-12 ">
+                <label for="validationTooltip01" class="form-label">Email address</label>
+                <input type="text" class="form-control" required>
+                <div class="valid-tooltip">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationTooltip02" class="form-label">First name</label>
+                <input type="text" class="form-control" placeholder="first name" required>
+                <div class="valid-tooltip">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationTooltipUsername " class="form-label invisible">Last name</label>
+                <div class="input-group has-validation">
+                    <input type="text" class="form-control" aria-describedby="validationTooltipUsernamePrepend"
+                        placeholder="last name" required>
+                    <div class="invalid-tooltip">
+                        Please input a unique and valid lastname.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="validationTooltip03" class="form-label">Address</label>
+                <input type="text" class="form-control" required>
+                <div class="invalid-tooltip">
+                    Please provide a valid Address.
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="text" class="form-control" placeholder="Office,suit,Apt." required>
+                <div class="invalid-tooltip">
+                    Please provide a valid Office,suit or Apt.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationTooltip03" class="form-label">City</label>
+                <input type="text" class="form-control" required>
+                <div class="invalid-tooltip">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationTooltip04" class="form-label">State</label>
+                <select class="form-select" required>
+                    <option>Ogun State</option>
+                    <option>Delta State</option>
+                    <option>Federal Capital Territory</option>
+                    <option>Lagos State</option>
+                    <option>Arizona</option>
+                    <option>Arkansas</option>
+                    <option>California</option>
+                    <option>New York</option>
+                    <option>Texas</option>
+                    <option>Washington D.C</option>
+                </select>
+                <div class="invalid-tooltip">
+                    Please select a valid state.
+                </div>
+            </div>
+            <div class="col-md-4 position-relative">
+                <label for="validationTooltip05" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="validationTooltip05" required>
+                <div class="invalid-tooltip">
+                    Please provide a valid zip.
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="validationTooltip03" class="form-label">Payment Details</label>
+                <span></span>
+                <input type="password" class="form-control" placeholder="0000 0000 0000 0000 MM/YY  CVV ZIP" required>
+                <label for="text" class="mt-1">ENCRYPTED AND SECURED</label>
+                <div class="invalid-tooltip">
+                    Please provide a valid Address.
+                </div>
+            </div>
+            <span class="mt-5 h5">What radio technologies are you using?</span>
+            <div class="form-check col-md-3 mt-1">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label h5">2G</label>
+            </div>
+            <div class="form-check col-md-3 mt-1">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label h5">3G</label>
+            </div>
+            <div class="form-check col-md-3 mt-1">
+                <input class="form-check-input mt-1" type="checkbox">
+                <label class="form-check-label h5">4G LTE</label>
+            </div>
+            <div class="form-check col-md-3 mt-1">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label h5">CAT-M</label>
+            </div>
+            <span class="mt-5 h5">How much data do you expect to use each month?</span>
+            <div class="form-check col-md-3 mt-1">
+                <input class="form-check-input" type="radio">
+                <label class="form-check-label h5">0-50 MB</label>
+            </div>
+            <div class="form-check col-md-3 mt-1">
+                <input class="form-check-input" type="radio">
+                <label class="form-check-label h5">50-250 MB</label>
+            </div>
+            <div class="form-check col-md-3 mt-1">
+                <input class="form-check-input mt-1" type="radio">
+                <label class="form-check-label h5">250 MB-1 GB</label>
+            </div>
+            <div class="form-check col-md-3 mt-1">
+                <input class=" disabled form-radio-input" type="radio"  aria-label="Disabled input example" disabled readonly checked>
+                <label class="form-check-label h5">1GB+</label>
+            </div>
+            <div class="col-md-12">
+                <label for="validationTooltip03" class="form-label">Promo code</label>
+                <input type="password" class="form-control" required>
+                <div class="invalid-tooltip">
+                    Please provide a valid Address.
+                </div>
+            </div>
+            <div class="form-check col-md-6 my-5">
+                <input class="form-check-input mt-1" type="checkbox" aria-label="Disabled input example" disabled readonly checked>
+                <label class="form-check-label h6">Sign me up for annoying offers</label>
+            </div>
+            <div class="col-6 my-5 align">
+                <button class="btn btn-primary" type="submit">Place order</button>
+            </div>
+        </form>
     </div>
+    <script src="/styles/js/form.js"></script>
     <script src="/styles/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
