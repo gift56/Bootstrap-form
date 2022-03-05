@@ -36,4 +36,12 @@ body .container .form-check-label {
   font-size: 18px;
   font-weight: 600;
 }
+
+body .container .form-control {
+  border: 1px solid #ccc !important;
+}
+
+body .container .one {
+  color: #a19f9fd4;
+}
 /*# sourceMappingURL=bootstrap.css.map */
